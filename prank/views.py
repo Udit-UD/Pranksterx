@@ -15,7 +15,6 @@ def search(request):
         a= random.choice(var)
         pg.write(var)
         pg.press('enter')
-    # context = {'data': var}
     return render(request, "result.html")
 
 
