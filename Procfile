@@ -1,0 +1,1 @@
+web: gunicorn prankster.wsgi --log-file -
