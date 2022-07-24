@@ -8,7 +8,7 @@ import random, time
 import os
 os.environ['DISPLAY'] = ':0'
 os.environ['XAUTHORITY']='/run/user/1000/gdm/Xauthority'
-import pyautogui
+import pyautogui as pg
     
 def search(request):
     d=request.POST
