@@ -3,8 +3,12 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import Template , Context
 import random, time
-import pyautogui as pg
+# import pyautogui as pg
 
+import os
+os.environ['DISPLAY'] = ':0'
+os.environ['XAUTHORITY']='/run/user/1000/gdm/Xauthority'
+import pyautogui
     
 def search(request):
     d=request.POST
